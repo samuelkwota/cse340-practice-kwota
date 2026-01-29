@@ -1,0 +1,10 @@
+<h1>Faculty Directory</h1>
+
+<ul>
+  <% faculty.forEach(member => { %>
+    <li>
+      <a href="/faculty/<%= member.id %>"><%= member.name %></a><br>
+      <%= member.department %> — <%= member.title %>
+    </li>
+  <% }) %>
+</ul>
